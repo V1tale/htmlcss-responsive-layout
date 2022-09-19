@@ -9,3 +9,67 @@ html {
 img {
     max-width: 100%;
 }
+header {
+    width:100%;
+    background-color: #0084fd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* DEBUG */
+    height: 70px;
+}
+.logo {
+    /* DEBUG */
+    width: 100px;
+    height: 70px;
+    background-color: yellow;
+}
+.h-menu {
+    /* DEBUG */
+    width: 100px;
+    height: 70px;
+    background-color: yellow;
+}
+.container {
+    width: 70%;
+    margin: auto;
+}
+.flex-header {
+    display:flex;
+    justify-content: space-between;
+}
+.list {
+    display: none;
+}
+.list ul {
+    display:flex;
+    align-items: center;
+    height:100%;
+}
+.list li {
+    margin-left:1rem;
+    color: white;
+    list-style-type: none;
+}
+
+
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px) {
+
+}
+@media screen and (min-width:992px) {
+    .h-menu {
+        display: none;
+    }
+    .list {
+        display: block;
+    }
+    .container {
+        max-width: 1000px;
+    }
+
+}
+@media screen and (1200px){
+
+}
