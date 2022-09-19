@@ -82,6 +82,7 @@ main {
     background-color: white;
     border-radius: 20px;
     margin:2rem 0;
+    padding:1rem;
 
 }
 #planning .bigcard {
@@ -105,8 +106,25 @@ main {
 #partners {
     background-color: aqua;
 }
-
-
+/* BENEFITS */
+#benefits {
+    background-color: #9792e4;
+}
+.button {
+    padding: .5rem 2rem;
+    margin:3rem 0;
+    font-size: 1.6rem;
+    border-radius: 10px;
+    background-color: #9792e4;
+    color: white;
+    text-decoration: none;
+}
+#benefits h2 {
+    color:white;
+    font-size: 3rem;
+    text-align: center;
+    padding-top:3rem;
+}
 /* MEDIA QUERIES */
 /* TABLET */
 @media screen and (min-width: 768px) {
@@ -136,6 +154,16 @@ main {
     .partner-cards .text h3{
         padding: 2rem 0;
     }
+    .benefit-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin:2rem 0;
+    }
+    #benefits .bigcard {
+        width: calc(100% / 2 - 2rem);
+        margin:0;
+    }
 }
 /* DESKTOP */
 @media screen and (min-width:992px) {
@@ -151,6 +179,10 @@ main {
     #planning .container {
         display: flex;
     }
+    #benefits .bigcard {
+        width: calc(100% / 3 - 2rem);
+    }
+    
 }
 /* WIDE SCREEN */
 @media screen and (1200px) {
