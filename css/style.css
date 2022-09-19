@@ -136,6 +136,15 @@ main {
     background-color: green;
     border-radius: 50%;
 }
+#action {
+    background-color: #9792e4;
+}
+#action .container {
+    text-align: center;
+}
+#action h4, h3, h2, span {
+    padding: 1rem 0;
+}
 /* MEDIA QUERIES */
 /* TABLET */
 @media screen and (min-width: 768px) {
@@ -196,7 +205,6 @@ main {
     #benefits .bigcard {
         width: calc(100% / 3 - 2rem);
     }
-    
 }
 /* WIDE SCREEN */
 @media screen and (1200px) {
