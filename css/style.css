@@ -39,6 +39,12 @@ header {
     width: 70%;
     margin: auto;
 }
+.smallcontainer {
+    width:60%;
+    text-align: center;
+    margin: auto;
+    padding: 2rem 0;
+}
 .flex-header {
     display:flex;
     justify-content: space-between;
@@ -144,6 +150,9 @@ main {
 }
 #action h4, h3, h2, span {
     padding: 1rem 0;
+}
+footer {
+    background-color: #333333;
 }
 /* MEDIA QUERIES */
 /* TABLET */
