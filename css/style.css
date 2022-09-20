@@ -265,6 +265,23 @@ main {
 #action .container {
     text-align: center;
 }
+#action * {
+    margin:30px;
+}
+#action h4 {
+    color:white
+}
+#action :nth-child(even) {
+    color: white
+}
+#action :nth-child(3) {
+    color: orange;
+    font-size: 5rem;
+}
+#action :nth-child(5) {
+    color: #9792e4;
+    font-size: 5rem;
+}
 /* #action h4 + h3 + h2 + span {
     padding: 1rem 0;
 } */
