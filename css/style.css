@@ -10,30 +10,41 @@ html {
 img {
     max-width: 100%;
 }
-display-flex {
-    display:flex;
-    flex-wrap: wrap;
+h3 {
+    font-size: 3rem;
+    text-align: center;
 }
+.white {
+    color:white;
+}
+.brightblue {
+    color: #0081fc;
+}
+.bgbrightblue {
+    background-color: #0081fc;
+}
+.blue {
+    color: #9792e4;
+}
+.bgblue {
+    background-color: #9792e4;
+}
+/* HEADER */
 header {
     width:100%;
-    background-color: #0084fd;
+    background-color: #0081fc;
     position: fixed;
     top: 0;
     left: 0;
-    /* DEBUG */
-    height: 70px;
+    /* height: 70px; */
 }
 .logo {
-    /* DEBUG */
-    width: 100px;
-    height: 70px;
-    background-color: yellow;
+    width: 7rem;
 }
-.h-menu {
-    /* DEBUG */
-    width: 100px;
-    height: 70px;
-    background-color: yellow;
+.h-menu i  {
+    font-size: 2.5rem;
+    color: white;
+    cursor: pointer;
 }
 .container {
     width: 70%;
@@ -48,6 +59,7 @@ header {
 .flex-header {
     display:flex;
     justify-content: space-between;
+    padding: 1rem 0 1rem;
 }
 .nav {
     display: none;
@@ -56,26 +68,63 @@ header {
     display:flex;
     align-items: center;
     height:100%;
-}
-.nav li {
-    margin-left:1rem;
-    color: white;
     list-style-type: none;
 }
-main {
-    margin-top: 100px;
+.nav a:not(.button) {
+    margin-left:1.4rem;
+    color: white;
+    list-style-type: none;
+    font-size: 1.4rem;
+    text-decoration: none;
 }
+.nav .button {
+    margin-left:20px;
+}
+main {
+    margin-top: 7rem;
+}
+/* FEATURES */
 #features {
     margin-bottom: 3rem;
 }
-.card {
+.button {
+    padding: .5rem 3rem;
+    margin:3rem 0;
+    font-size: 2rem;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.card img {
+    width:300px;
+
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-150px);
+}
+
+.card .button {
+    color:white;
+    text-align: center;
+
+}
+.card,.firstcard{
     border-radius: 10px;
     width:100%;
     margin-bottom:1.5rem;
-    /* DEBUG */
-    height: 200px;
     background-color: #b5ddff;
-
+    padding: 10px 10px 0 10px;
+}
+.card p {
+    font-size: 1.4rem;
+    margin:2rem 0;
+    color: rgb(110, 110, 110)
+}
+.card i {
+    margin-right: 5px;
+}
+.card h3 {
+    color: #0081fc;
 }
 /* PLANNING */
 #planning {
@@ -120,14 +169,10 @@ main {
 #benefits {
     background-color: #9792e4;
 }
-.button {
-    padding: .5rem 2rem;
-    margin:3rem 0;
-    font-size: 1.6rem;
-    border-radius: 10px;
-    background-color: #9792e4;
-    color: white;
-    text-decoration: none;
+
+.white {
+    background-color: white;
+    color: black;
 }
 #benefits h2 {
     color:white;
@@ -163,7 +208,7 @@ footer {
         gap: 2rem;
         justify-content: center;
     }
-    #features :first-child {
+    #features .firstcard {
         width: calc(100% / 3 * 2 - 2rem);
     }
     .card  {
