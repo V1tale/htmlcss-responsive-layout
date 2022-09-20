@@ -36,7 +36,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    /* height: 70px; */
+    z-index: 10;
 }
 .logo {
     width: 7rem;
@@ -96,11 +96,6 @@ main {
 }
 .card img {
     width:300px;
-
-    position: relative;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-150px);
 }
 
 .card .button {
@@ -108,7 +103,7 @@ main {
     text-align: center;
 
 }
-.card,.firstcard{
+.firstcard, .card{
     border-radius: 10px;
     width:100%;
     margin-bottom:1.5rem;
@@ -116,7 +111,7 @@ main {
     padding: 10px 10px 0 10px;
 }
 .card p {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     margin:2rem 0;
     color: rgb(110, 110, 110)
 }
@@ -125,6 +120,14 @@ main {
 }
 .card h3 {
     color: #0081fc;
+}
+.card:not(.firstcard) i {
+    font-size: 8rem;
+    color: #0081fc;
+    padding-top:2rem;
+}
+.card {
+    text-align: center;
 }
 /* PLANNING */
 #planning {
@@ -211,6 +214,9 @@ footer {
     #features .firstcard {
         width: calc(100% / 3 * 2 - 2rem);
     }
+    .firstcard * {
+        text-align: left;
+    }
     .card  {
         width: calc(100% / 3 - 2rem);
         margin-bottom: 0;
@@ -258,6 +264,15 @@ footer {
     }
     #benefits .bigcard {
         width: calc(100% / 3 - 2rem);
+    }
+    .firstcard {
+        display:flex;
+    }
+    .bottomcard {
+        width:50%;
+    }
+    .topcard {
+        width: 50%;
     }
 }
 /* WIDE SCREEN */
