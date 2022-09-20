@@ -246,12 +246,6 @@ main {
     border-radius: 50%;
     margin: 2rem 0;
 }
-.about-bottom .picture {
-    width: 100px;
-    height:100px;
-    background-color: green;
-    border-radius: 50%;
-}
 .about-bottom {
     position:relative;
     flex-shrink: 0;
@@ -330,6 +324,9 @@ footer {
     .partner-cards .text {
         padding-left: 2rem;
     }
+    .text * {
+        text-align: left;
+    }
     .partner-cards .text h3{
         padding: 2rem 0;
     }
@@ -381,8 +378,14 @@ footer {
         align-items: center;
         padding: 0;
     }
+}
 
 /* WIDE SCREEN */
-@media screen and (1200px) {
-
+@media screen and (min-width:1200px) {
+    .container {
+        max-width: 1300px;
+    }
+    .smallcontainer {
+        max-width: 1200px;
+    }
 }
