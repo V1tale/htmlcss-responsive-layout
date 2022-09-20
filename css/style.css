@@ -234,11 +234,30 @@ main {
     padding-bottom: 3rem;
 }
 /* ABOUT US */
+.about-top h2 {
+    padding: 2rem 0 1rem;
+}
+.about-bottom img {
+    width:200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 2rem 0;
+}
 .about-bottom .picture {
     width: 100px;
     height:100px;
     background-color: green;
     border-radius: 50%;
+}
+.about-bottom {
+    position:relative;
+    flex-shrink: 0;
+}
+.about-bottom .quote {
+    position:absolute;
+    top: 1rem;
+    left: 12rem;
+    font-size: 6rem;
 }
 #action {
     background-color: #9792e4;
@@ -296,6 +315,10 @@ footer {
     }
     #about-us .container {
         display: flex;
+        justify-content: space-between;
+    }
+    #about-us .about-top {
+        width:50%;
     }
 }
 /* DESKTOP */
@@ -328,6 +351,7 @@ footer {
         align-items: center;
         padding: 0;
     }
+
 /* WIDE SCREEN */
 @media screen and (1200px) {
 
