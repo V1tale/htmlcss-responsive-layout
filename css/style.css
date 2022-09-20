@@ -5,7 +5,7 @@
 }
 html {
     font-size: 62.5%;
-    font-family: ;
+    font-family: 'PT Sans', sans-serif;
 }
 img {
     max-width: 100%;
@@ -234,6 +234,9 @@ main {
     padding-bottom: 3rem;
 }
 /* ABOUT US */
+#about-us {
+    padding-bottom:3em;
+}
 .about-top h2 {
     padding: 2rem 0 1rem;
 }
@@ -259,20 +262,27 @@ main {
     left: 12rem;
     font-size: 6rem;
 }
+.about-bottom :nth-child(4) {
+    color:white;
+}
+.about-bottom p{
+    margin-bottom: 2rem;
+}
+.button i {
+    margin-right: 10px;
+}
+/* CALL TO ACTION */
 #action {
     background-color: #9792e4;
 }
 #action .container {
     text-align: center;
 }
-#action * {
-    margin:30px;
+#action *:not(.smallcontainer) {
+    margin:30px 0;
 }
-#action h4 {
-    color:white
-}
-#action :nth-child(even) {
-    color: white
+#action :nth-child(odd) {
+    color: white;
 }
 #action :nth-child(3) {
     color: orange;
@@ -280,7 +290,12 @@ main {
 }
 #action :nth-child(5) {
     color: #9792e4;
-    font-size: 5rem;
+    padding: 2rem 4rem;
+    border-radius: 30px;
+}
+#action span {
+    line-height: 10rem;
+
 }
 footer {
     background-color: #333333;
